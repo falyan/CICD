@@ -1,6 +1,5 @@
 ---
 - name: BUILD APPS
-  hosts: all
   tasks:
     - name: Run Maven clean package in production mode
       shell: mvn clean package -DskipTests -Pproduction
