@@ -1,5 +1,5 @@
 ---
 - name: BUILD APPS
-  shell: mvn clean package -DskipTests -Pproduction
+  shell: /opt/apache-maven-3.9.4/bin/mvn clean package -DskipTests -Pproduction
   args:
     chdir: /root/fenanza/fenanza-be
