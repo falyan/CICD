@@ -1,4 +1,4 @@
 ---
 - name: BUILD APPS
   ansible.builtin.shell: |
-    cd /root/fenanza/fenanza-be && mvn clean package -DskipTests -Pproduction
+    cd /root/fenanza/fenanza-be && ./opt/apache-maven-3.9.4/bin/mvn clean package -DskipTests -Pproduction
