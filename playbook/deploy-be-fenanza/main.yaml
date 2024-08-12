@@ -1,6 +1,5 @@
 - name: DEPLOY BE FENANZA
   hosts: all
   become: yes
-  become_user: root
   roles:
     - { role: roles/deploy-be-fenanza }
