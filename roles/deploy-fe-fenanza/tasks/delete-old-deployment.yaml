@@ -1,4 +1,4 @@
 ---
-- name: CHECKOUT BRANCH PRODUCTION
+- name: TAKEOUT OLD DEPLOYMENT
   ansible.builtin.shell: |
     pm2 delete fenanza-fe

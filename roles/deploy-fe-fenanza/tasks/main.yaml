@@ -13,7 +13,7 @@
 
 - include_tasks: pull-scm.yaml
   tags:
-    - build_app
+    - pull_code
 
 - include_tasks: deploy.yaml
   tags:
