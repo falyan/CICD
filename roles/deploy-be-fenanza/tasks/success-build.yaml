@@ -1,4 +1,4 @@
 ---
-- name: SUCCES BUILD
+- name: SUCCESS BUILD
   ansible.builtin.shell: |
     echo "APPLICATION BUILD SUCCESFUL"
