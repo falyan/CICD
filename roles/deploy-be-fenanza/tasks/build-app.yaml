@@ -1,7 +1,5 @@
 ---
 - name: BUILD APPS
-  tasks:
-    - name: Run Maven clean package in production mode
-      shell: mvn clean package -DskipTests -Pproduction
-      args:
-        chdir: /root/fenanza/fenanza-be
+  shell: mvn clean package -DskipTests -Pproduction
+  args:
+    chdir: /root/fenanza/fenanza-be
