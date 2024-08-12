@@ -1,4 +1,8 @@
 ---
 - name: BUILD APPS
-  ansible.builtin.shell: |
-    cd /root/fenanza/fenanza-be && ./opt/apache-maven-3.9.4/bin/mvn clean package -DskipTests -Pproduction
+  hosts: all
+  tasks:
+    - name: Run Maven clean package in production mode
+      shell: mvn clean package -DskipTests -Pproduction
+      args:
+        chdir: /root/fenanza/fenanza-be
