@@ -1,0 +1,5 @@
+---
+- name: DEPLOY FE
+  shell: pm2 start --name fenanza-fe npm -- start
+  args:
+    chdir: /root/fenanza/fenanza-fe

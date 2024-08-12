@@ -1,0 +1,5 @@
+- name: DEPLOY BE FENANZA
+  hosts: all
+  become: yes
+  roles:
+      - { role: roles/deploy-fe-fenanza }

@@ -1,0 +1,4 @@
+---
+- name: CHECKOUT BRANCH PRODUCTION
+  ansible.builtin.shell: |
+    cd /root/fenanza/fenanza-fe && git checkout production

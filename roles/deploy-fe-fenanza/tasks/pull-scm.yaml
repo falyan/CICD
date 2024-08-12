@@ -1,0 +1,4 @@
+---
+- name: PULL UPDATE CODE
+  ansible.builtin.shell: |
+    cd /root/fenanza/fenanza-fe && git pull origin production
