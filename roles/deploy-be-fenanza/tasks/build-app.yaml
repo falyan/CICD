@@ -1,0 +1,4 @@
+---
+- name: BUILD APPS
+  ansible.builtin.shell: |
+    cd /root/fenanza/fenanza-be && mvn clean package -DskipTests -Pproduction

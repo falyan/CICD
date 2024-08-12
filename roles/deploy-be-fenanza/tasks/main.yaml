@@ -1,0 +1,24 @@
+---
+- include_tasks: checkout.yaml
+  tags:
+    - checkout
+
+- include_tasks: pull-scm.yaml
+  tags:
+    - pull_scm
+
+- include_tasks: stop-service.yaml
+  tags:
+    - stop_service
+
+- include_tasks: build-app.yaml
+  tags:
+    - build_app
+
+- include_tasks: restart-service.yaml
+  tags:
+    - restart_app
+
+- include_tasks: success-build.yaml
+  tags:
+    - success

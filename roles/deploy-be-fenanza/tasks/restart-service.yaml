@@ -1,0 +1,4 @@
+---
+- name: RESTART SERVICE FENANZA BE
+  ansible.builtin.shell: |
+    systemctl restart fenanza.service

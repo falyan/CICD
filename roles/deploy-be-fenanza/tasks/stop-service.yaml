@@ -1,0 +1,4 @@
+---
+- name: STOP SERVICE FENANZA BE
+  ansible.builtin.shell: |
+    systemctl stop fenanza.service
